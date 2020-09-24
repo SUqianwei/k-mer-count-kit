@@ -1,2 +1,15 @@
 # k-mer-count-kit
-用python写的一个关于k-mer counter的程序
+用python写的一个关于k-mer counter的程序。
+该程序有五个功能：
+	length :统计输入序列的碱基数。
+	translate :把DNA或RNA序列翻译为蛋白质序列。
+	complement :把输入的DNA序列按碱基互补配对原则转换成其反向互补序列。
+	k_mer_counter :对输入序列的k-mer进行基本的统计。
+	compare : 通过k-mer counter比较不同菌株基因组的相似性。
+
+有五个测试数据：
+albB_dna.fasta ：该序列用来测试translate和complement两个功能，它是我本科的时候用过的一个蛋白序列，这里提供的是它的DNA序列，需要先把该序列转变为反向互补序列，再对得到的反向互补序列进行翻译，才能得到蛋白序列。
+caulobacterNA1000.fasta，coelicolor.fasta，EcoliK12.fasta，EcoliO157.fasta：这四个数据均可用来进行k_mer_counter功能的测试，分别为四个细菌的基因组序列。
+第四个功能compare的实现需要把以上四个文件根据提示依次输入。
+
+具体的运行过程的结果和参数的测试可以在 程序运行记录 文件中查看。
