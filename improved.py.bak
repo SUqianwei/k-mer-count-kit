@@ -225,7 +225,6 @@ elif func == 'k_mer_counter':
             print(indexToDinucleotide(i,k),element,file=f4)
     f3.close()
     f4.close()
-	print('请到kmc.result查看结果。')
     
 elif func == 'compare':
     print(compare(filename))
