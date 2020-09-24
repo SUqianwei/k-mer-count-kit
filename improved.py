@@ -6,7 +6,7 @@ Created on Thu Sep 17 21:43:55 2020
 """
 # =============================================================================
 # #读入原始序列
-# #对原始序列进行归一化，去除大小写和第一行的影响,去除换行符
+# #对原始序列进行归一化，去除大小写和第一行的影响,去除换行符，去掉所有的 N和 M（2），R（1）
 # =============================================================================
 
 def getSeq(filename):  
@@ -24,6 +24,9 @@ def getSeq(filename):
     seq = seq.strip()
     seq = seq.upper()
     seq = seq.replace('\n','').replace('\r','')
+    seq = seq.replace('N','')
+    seq = seq.replace('M','')
+    seq = seq.replace('R','')
     return str(seq),seq_num
 
 # =============================================================================
@@ -225,7 +228,8 @@ elif func == 'k_mer_counter':
             print(indexToDinucleotide(i,k),element,file=f4)
     f3.close()
     f4.close()
-	print('请到kmc.result查看结果。')
+    print('请到kmc.result中查看结果')
+    
     
 elif func == 'compare':
     print(compare(filename))
