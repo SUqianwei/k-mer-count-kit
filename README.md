@@ -19,7 +19,7 @@ caulobacterNA1000.fasta，coelicolor.fasta，EcoliK12.fasta，EcoliO157.fasta：
 在linux中，请执行 python improved.py ,随后根据程序提示输入相关数据。
 
 程序自评：
-	优点：把多个功能集成到了一个程序中，方便相关功能的调用
+	优点：把多个功能集成到了一个程序中，方便相关功能的调用。
 	      把子序列使用特定的数字表示，并存储为列表索引，一定程度上减少了对内存的使用。这个idea来自于https://developer.51cto.com/art/201003/188595.html。
 	缺点：缺点那就有很多了，这里就说两个吧。
 	      需要交互，不能放到后台运行,不能用slurm系统提交。运行时建议重开一个会话。
