@@ -1,5 +1,5 @@
 # k-mer-count-kit
-2020年11月更新：  
+#2020年11月更新：  
 1、 主程序变为improved1.py。  
 2、	采用argparse来进行互动，极大的方便了程序的运行。  
 3、	对可处理文件的数目做了优化，更新后可以处理多个文件。 
@@ -9,7 +9,7 @@
 5、 缺点：对多序列的fasta文件不具备处理能力。  
 请到 python程序运行记录.docx 中查看详细的更新说明和运行结果。  
 
-参数说明：  
+###参数说明：  
 usage: improved1.py [-h] [--length] [--translate] [-f FILE [FILE ...]]
                     [--complement] [--kmer_counter] [--compare] [-k K_VALUE]  
 
@@ -25,7 +25,7 @@ optional arguments:
   -k K_VALUE, --k_value K_VALUE
                         用于进行k-mer计算的mer的值。  
 
-示例：  
+###示例：  
 获得输入序列文件的长度：  
 	python improved1.py --length -f albA.fasta albB_dna.fasta  
 翻译DNA或RNA序列为蛋白质序列：  
@@ -38,9 +38,7 @@ kmer-counter计数：
 	python improved1.py --compare -k 3 -f EcoliK12.fasta EcoliO157.fasta coelicolor.fastafasta Streptococcus_pneumoniae_R6.fasta caulobacterNA1000.fasta  
 
 	
-
-
-
+#程序说明(2020年10月14日):  
 用python写的一个关于k-mer counter的程序。主程序为 improved.py 。
 
 该程序有五个功能：  
