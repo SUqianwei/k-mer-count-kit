@@ -3,9 +3,7 @@
 1、 主程序变为improved1.py。  
 2、	采用argparse来进行互动，极大的方便了程序的运行。  
 3、	对可处理文件的数目做了优化，更新后可以处理多个文件。 
-4、 新增加两个测试数据albA.fasta和Streptococcus_pneumoniae_R6.fasta，用来测试多个输入文件的处理过程。   
-	albA.fasta是一个蛋白的DNA序列。  
-	Streptococcus_pneumoniae_R6.fasta是肺炎链球菌的基因组序列。  
+4、 新增加两个测试数据albA.fasta和Streptococcus_pneumoniae_R6.fasta，用来测试多个输入文件的处理过程。albA.fasta是一个蛋白的DNA序列，Streptococcus_pneumoniae_R6.fasta是肺炎链球菌的基因组序列。  
 5、 缺点：对多序列的fasta文件不具备处理能力。  
 请到 python程序运行记录.docx 中查看详细的更新说明和运行结果。  
 
